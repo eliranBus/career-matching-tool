@@ -1,0 +1,220 @@
+.results {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.results h1 {
+  position: relative;
+  font-size: 3em;
+}
+
+.results h1::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 2em;
+  bottom: -0.3em;
+  left: 50%;
+  transform: translateX(-1em);
+  background-color: #2a78ff;
+}
+
+.results .content {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.results .content .bold {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.2em;
+}
+
+.results .content .bolder {
+  font-weight: 700;
+  display: inline-block;
+}
+
+.results .content .icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.results .content .icons .icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1em;
+  width: 5em;
+}
+
+.results .content .icons .icon img {
+  width: 3em;
+}
+
+.results .content .icons .icon p {
+  font-size: 0.7em;
+}
+
+.results .content p {
+  margin: 0 0 1em;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.resultButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17vw;
+  height: 7vh;
+  border-radius: 5em;
+  font-size: 1.2vw;
+  margin: 0 1em;
+  font-weight: 200;
+  opacity: 1;
+  padding: 0.8em 1.5em 0.9em 0;
+  left: calc(50% - 5em) !important;
+  top: auto;
+  box-shadow: 0 19px 38px rgba(32, 14, 190, 0.322),
+    0 5px 12px rgba(48, 25, 179, 0.082);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+.resultButton:hover {
+  box-shadow: 0 14px 28px rgba(26, 36, 182, 0.25),
+    0 10px 10px rgba(55, 15, 233, 0.22);
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+.finishBtn {
+  background-color: #f7f8fc;
+  border: 1px solid black;
+  color: black;
+  top: auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  z-index: 1000;
+  opacity: 0.4;
+  background-color: white;
+  outline: none;
+}
+
+.toFormBtn {
+  background-color: #2a78ff;
+  border: none;
+  color: white;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  z-index: 1000;
+  outline: none;
+}
+
+.nextArrow {
+  fill: white;
+  padding-right: 1.5em;
+}
+
+.resultPerson img {
+  width: 25vw;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 1400px) {
+  .results h1 {
+    margin-top: 0;
+  }
+  .results .content {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .results {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+  }
+
+  .results h1 {
+    font-size: 3em;
+  }
+
+  .results .content {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .results .content p {
+    margin: 0 0 2em;
+  }
+
+  .resultButton {
+    width: 10em;
+    height: 2.8em;
+    left: calc(50% - 6em) !important;
+    font-size: 1em;
+  }
+
+  .resultPerson img {
+    width: 20vw;
+    z-index: -1;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .results {
+    height: 100%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .results h1 {
+    font-size: 7vw;
+    margin-top: 2em;
+  }
+  .results .content {
+    font-size: 3.5vw;
+  }
+  .results .content p {
+    margin: 0 0 2em;
+  }
+  .resultButton {
+    width: 32vw;
+    height: 10vw;
+    left: calc(50% - 6em) !important;
+    font-size: 3vw;
+  }
+
+  .toFormBtn {
+    padding-right: 2em;
+  }
+
+  .toFormBtn svg {
+    width: 0.5em;
+    padding-right: 2em;
+  }
+
+  .resultPerson img {
+    display: none;
+  }
+}

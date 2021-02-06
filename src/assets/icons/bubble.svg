@@ -1,0 +1,43 @@
+<svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="301.805"
+          height="330.379"
+          viewBox="0 0 301.805 330.379"
+        >
+          <defs>
+            <linearGradient
+              id="linear-gradient"
+              x1="-0.036"
+              y1="0.626"
+              x2="0.998"
+              y2="0.676"
+              gradientUnits="objectBoundingBox"
+            >
+              <stop offset="0" stop-color="#ff23ff" />
+              <stop offset="1" stop-color="#00e5ff" />
+            </linearGradient>
+            <filter
+              id="CTA_Bubble"
+              x="0"
+              y="0"
+              width="301.805"
+              height="330.379"
+              filterUnits="userSpaceOnUse"
+            >
+              <feOffset dx="12" dy="18" input="SourceAlpha" />
+              <feGaussianBlur stdDeviation="11.5" result="blur" />
+              <feFlood flood-opacity="0.09" />
+              <feComposite operator="in" in2="blur" />
+              <feComposite in="SourceGraphic" />
+            </filter>
+          </defs>
+          <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#CTA_Bubble)">
+            <path
+              id="CTA_Bubble-2"
+              data-name="CTA Bubble"
+              d="M781.016,1301.344c53.79,48.273-42.951,168.724-108.437,108.437-44.06-40.562-113.494-48.763-108.437-108.437,10.645-125.615,72.856-171.154,108.437-108.437C699.16,1239.76,758.167,1280.839,781.016,1301.344Z"
+              transform="translate(-541.38 -1148.43)"
+              fill="url(#linear-gradient)"
+            />
+          </g>
+        </svg>

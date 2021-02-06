@@ -1,0 +1,14 @@
+.decorImages .shape {
+  position: absolute;
+  z-index: -10000000;
+}
+
+@media only screen and (max-width: 1024px) {
+  .decorImages .shape {
+    opacity: 0.4;
+  }
+
+  .non-mobile {
+    display: none;
+  }
+}
